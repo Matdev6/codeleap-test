@@ -1,36 +1,146 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+📌 CodeLeap Network – Technical Test
 
-## Getting Started
+Este projeto é uma aplicação web desenvolvida como teste técnico, que permite aos usuários criar, visualizar, editar e excluir posts em um feed público.
 
-First, run the development server:
+A aplicação consome a API pública disponibilizada pela CodeLeap e implementa operações completas de CRUD de posts.
 
-```bash
+🚀 Tecnologias utilizadas
+
+⚛️ React
+
+▲ Next.js
+
+📦 Axios
+
+🧾 React Hook Form
+
+🎨 Tailwind CSS
+
+🧩 Context API
+
+🧠 TypeScript
+
+📷 Funcionalidades
+
+A aplicação permite:
+
+✅ Autenticação simples
+
+O usuário informa apenas um username para acessar a aplicação.
+
+✅ Criar posts
+
+O usuário pode criar um post informando:
+
+Title
+
+Content
+
+✅ Listar posts
+
+Os posts são exibidos em um feed, contendo:
+
+título
+
+conteúdo
+
+autor
+
+data de criação
+
+✅ Editar posts
+
+O usuário pode editar apenas os posts criados por ele.
+
+A edição abre um modal permitindo alterar:
+
+título
+
+conteúdo
+
+✅ Deletar posts
+
+O usuário pode excluir seus próprios posts.
+
+Antes da exclusão é exibido um modal de confirmação.
+
+📂 Estrutura do projeto
+src/
+ ├── app/
+ │   ├── components/
+ │   │   └── Modal.tsx
+ │   │
+ │   ├── context/
+ │   │   └── UserContext.tsx
+ │   │
+ │   ├── signup/
+ │   │   └── page.tsx
+ │   │
+ │   └── page.tsx
+ │
+ ├── styles/
+ └── types/
+🌐 API utilizada
+
+A aplicação utiliza a API pública:
+
+https://dev.codeleap.co.uk/careers/
+
+Operações utilizadas:
+
+Método	Endpoint	Descrição
+GET	/careers/	Listar posts
+POST	/careers/	Criar post
+PATCH	/careers/{id}	Editar post
+DELETE	/careers/{id}	Deletar post
+⚙️ Como rodar o projeto
+1️⃣ Clonar repositório
+git clone https://github.com/Matdev6/codeleap-test.git
+2️⃣ Entrar na pasta
+cd codeleap-test
+3️⃣ Instalar dependências
+npm install
+
+ou
+
+yarn
+4️⃣ Rodar o projeto
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+5️⃣ Abrir no navegador
+http://localhost:3000
+🧠 Decisões técnicas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Algumas decisões tomadas durante o desenvolvimento:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Uso do React Hook Form para gerenciamento de formulários
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Uso de Context API para armazenar o usuário logado
 
-## Learn More
+Uso de Axios para comunicação com a API
 
-To learn more about Next.js, take a look at the following resources:
+Uso de modais reutilizáveis para confirmação de ações
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Separação de componentes para melhor organização
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🎯 Melhorias futuras
 
-## Deploy on Vercel
+Possíveis melhorias:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Melhor formatação de data (ex: 2 minutes ago)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Paginação de posts
+
+Loading states
+
+Melhor tratamento de erros
+
+Testes automatizados
+
+UI/UX aprimorada
+
+👨‍💻 Autor
+
+Desenvolvido por Mateus Sousa
+
+GitHub:
+https://github.com/Matdev6
