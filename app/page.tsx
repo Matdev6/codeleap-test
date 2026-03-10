@@ -194,7 +194,7 @@ export default function Home() {
 						)}
 						{editedPost > 0 && (
 							<Modal onClose={() => setEditedPost(0)}>
-								<div className="flex flex-col gap-6 p-2 md:w-[500px]">
+								<div className="flex flex-col gap-6 p-2 md:w-125">
 									<h2 className="text-lg font-semibold">
 										Edit item
 									</h2>
