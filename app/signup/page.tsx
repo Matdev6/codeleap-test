@@ -28,16 +28,16 @@ export default function Signup() {
     return (
         <main className="w-full h-screen flex items-center justify-center bg-neutral-200 px-4 md:px-0">
             <form onSubmit={handleSubmit(submitUsername)} className="w-125 h-52 p-6 flex flex-col gap-4 bg-white rounded-2xl shadow-md">
-                <h2 className="text-xl font-bold">Welcome to CodeLeap network!</h2>
+                <h2 className="text-xl font-bold text-neutral-900">Welcome to CodeLeap network!</h2>
 
                 <div className="flex flex-col gap-1">
-                    <label htmlFor="username">Please enter your username</label>
+                    <label htmlFor="username" className=" text-neutral-900">Please enter your username</label>
 
                     <input
                         {...register("username")}
                         type="text"
                         placeholder="John doe"
-                        className="p-2 px-4 border border-neutral-400 rounded-xl"
+                        className="p-2 px-4 border border-neutral-400 rounded-xl text-neutral-600"
                     />
                 </div>
 

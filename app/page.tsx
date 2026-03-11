@@ -126,14 +126,14 @@ export default function Home() {
 				</header>
 				<div className="flex flex-col p-4 gap-4">
 					<form onSubmit={handleSubmit(createPost)} className="flex flex-col gap-4 border border-neutral-300 rounded-2xl p-6">
-						<h3 className='text-xl font-semibold'>What's on your mind?</h3>
+						<h3 className='text-xl font-semibold text-neutral-900'>What's on your mind?</h3>
 
 						<div className="flex flex-col gap-1">
-							<label htmlFor="title">Title</label>
-							<input {...register("title")} type="text" placeholder="What is on your mind?" className="p-2 px-4 border border-neutral-400 rounded-xl" />
+							<label htmlFor="title" className="text-neutral-800">Title</label>
+							<input {...register("title")} type="text" placeholder="What is on your mind?" className="text-neutral-800 p-2 px-4 border border-neutral-400 rounded-xl" />
 						</div>
 
-						<div className="flex flex-col gap-1">
+						<div className="flex flex-col gap-1 text-neutral-900">
 							<label>Content</label>
 							<textarea  {...register("content")} placeholder="Content here" className="p-2 px-4 border border-neutral-400 rounded-xl resize-none h-32" />
 						</div>
@@ -162,7 +162,7 @@ export default function Home() {
 											{timeAgo(post.created_datetime)}
 										</span>
 									</div>
-									<p>{post.content}</p>
+									<p className="text-neutral-700">{post.content}</p>
 								</div>
 							</div>
 
